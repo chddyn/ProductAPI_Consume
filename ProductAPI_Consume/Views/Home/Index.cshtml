@@ -1,0 +1,21 @@
+﻿@model List<ProductDTO>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+
+@foreach (var product in Model)
+{
+
+
+    <div>
+        <h4>@product.productName</h4>
+        <p>@product.Price</p>
+        <p>@product.productId</p>
+
+
+    </div>
+}
